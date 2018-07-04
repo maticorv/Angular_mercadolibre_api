@@ -1,0 +1,40 @@
+
+<div class="container">
+
+	<table >
+		<thead>
+			<tr>
+				<th ><div>Packs de promociones clasificadas</div></th>
+			</tr>
+			<tr>
+			<th>ID</th>
+				<th>Id Categoria</th>
+				<th>Brand</th>
+				<th>Description</th>
+				<th>Price</th>
+				<th>Package_type</th>
+				<th>Duration</th>
+				<th>Status</th>
+				
+			</tr>
+		</thead>
+		<tbody>
+			
+				<tr *ngFor="let detalle of detalleCategoria">
+				
+				<td>{{detalle.id}}</td>
+				<td>{{detalle.category_id}}</td>
+				<td>{{detalle.brand}}</td>
+				<td>{{detalle.description}}</td>
+				<td>{{detalle.price}}</td>
+				<td>{{detalle.package_type}}</td>
+				<td>{{detalle.duration}}</td>
+				<td>{{detalle.status}}</td>
+				
+					
+					
+			</tr>
+		</tbody>
+	</table>
+	
+</div>

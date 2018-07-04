@@ -1,0 +1,53 @@
+
+<!-- 
+<p>Categorias</p>
+
+<div class="container">
+	
+	<select [(ngModel)]="categoria">
+		<option *ngFor="let item of categorias" [value]="item.id">{{item.name}}</option>
+	</select> 
+	
+	<br />
+	
+	
+	<a *ngIf="categoria" [routerLink]="['detalleCategoria/' + categoria]">Ver Detalle de Categoria</a>
+</div>
+
+<BR /><BR />
+-->
+
+<div class="container">
+
+	<table >
+		<thead>
+			<tr>
+				<th colspan=4><div >Categoria mercadolibre</div></th>
+			</tr>
+			<tr>
+			 
+			<th >ID</th>
+				<th>Nombre</th>
+				<th>Promociones</th>
+				
+			</tr>
+		</thead>
+		<tbody>
+			
+			<tr *ngFor="let categoria of categorias">
+			
+		
+				
+				<td>{{categoria.id}}</td>
+				<td>{{categoria.name}}</td>
+				
+			<td><a [routerLink]="['/detalleCategoria/'+ categoria.id]">Click</a>	</td>
+					
+			</tr>
+		</tbody>
+	</table>
+	
+</div>
+
+
+
